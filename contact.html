@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8de7bd;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input,
+    textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .info-section {
+      max-width: 600px;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🖥️ My Contact Page</h2>
+  <p>Welcome to my contact page! If you have any questions or would like to get in touch, please fill out the form below or reach out via email.</p>
+
+  <form action="https://formspree.io/f/yourFormID" method="POST">
+    <h3>Contact Me</h3>
+    <input type="text" name="name" placeholder="Your Name" required /><br />
+    <input type="email" name="email" placeholder="Your Email" required /><br />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br />
+    <button type="submit">Send Message</button>
+  </form>
+
+  <section class="info-section">
+    <h3>Get In Touch</h3>
+    <p>If you have any questions or would like to get in touch, feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
+    <p>Email: <a href="mailto:ikhushigupta20@gmail.com">ikhushigupta20@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/khushi-gupta-714543292" target="_blank">linkedin.com/in/khushi-gupta-714543292</a></p>
+    <p>GitHub: <a href="https://github.com/khushigupta2605" target="_blank">github.com/khushigupta2605</a></p>
+
+    <div style="margin-top: 20px;">
+      <a href="index.html">
+        <button>← Back to Home Page</button>
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
